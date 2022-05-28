@@ -32,3 +32,18 @@ blockquote {
   padding: 0 0 0 1rem;
   margin: 1rem 0;
 }
+
+code[class*="language-"]{
+  font-size: 15px;
+}
+
+/* Inline code */
+:not(pre) > code {
+	padding: 0.2em 0.4em;
+  font-size: 85%;
+  color: #000000d1;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  background-color: #7a95b612;
+  border-radius: 3px;
+	white-space: normal;
+}
