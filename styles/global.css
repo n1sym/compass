@@ -26,6 +26,16 @@ img {
   display: block;
 }
 
+hr {
+  height: 2px;
+  background-color: rgb(219, 219, 219);
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 blockquote {
   color: #999;
   border-left: 0.2rem solid #dfe2e5;

@@ -10,7 +10,8 @@ export default function Post({
 }: {
   postData: {
     title: string
-    date: string
+    created_at: string
+    updated_at: string
     contentHtml: string
   }
 }) {
@@ -22,7 +23,8 @@ export default function Post({
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
-
+          created : <Date dateString={postData.created_at} /> /
+          updated : <Date dateString={postData.updated_at} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
