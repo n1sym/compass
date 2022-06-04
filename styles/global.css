@@ -45,6 +45,7 @@ blockquote {
 
 code[class*="language-"]{
   font-size: 15px;
+  font-family: Consolas, Monaco, monospace;
 }
 
 /* Inline code */

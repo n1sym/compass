@@ -16,7 +16,7 @@ export default function Layout({
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/mono-blue.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
         <link rel="icon" href="/favicon.ico" />
         <meta
