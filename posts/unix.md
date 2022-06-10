@@ -1,7 +1,7 @@
 ---
 title: "UNIX哲学"
 created_at: "2022-06-04"
-updated_at: "2022-06-04"
+updated_at: "2022-06-10"
 ---
 
 ### 小さく作る
