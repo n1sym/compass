@@ -42,7 +42,7 @@ export default function Home({ allPostsData }: { allPostsData: typeAllPostsData[
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          技術周りの指針について書く場所。 書いてる人：<a href="https://twitter.com/n1sym">n1sym</a>
+          技術メモ。 書いてる人：<a href="https://twitter.com/n1sym">n1sym</a>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

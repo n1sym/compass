@@ -1,5 +1,5 @@
 ---
-title: "テストケースの作り方"
+title: "テストケース"
 created_at: "2022-06-10"
 updated_at: "2022-06-11"
 category: "test"
