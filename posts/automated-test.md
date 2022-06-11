@@ -2,6 +2,7 @@
 title: "自動テスト"
 created_at: "2022-06-10"
 updated_at: "2022-06-10"
+category: "test"
 ---
 
 ### ユニットテスト

@@ -2,6 +2,7 @@
 title: "コードの可読性"
 created_at: "2022-05-28"
 updated_at: "2022-06-04"
+category: "writing"
 ---
 
 ### 命名規則

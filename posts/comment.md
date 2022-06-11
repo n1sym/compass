@@ -2,6 +2,7 @@
 title: "コードにコメントすべきこと"
 created_at: "2022-05-30"
 updated_at: "2022-05-30"
+category: "writing"
 ---
 
 ### コメントの目的

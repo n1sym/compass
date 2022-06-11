@@ -3,18 +3,38 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
 import { GetStaticProps } from 'next'
 
-export default function Home({
-  allPostsData
-}: {
-  allPostsData: {
-    date: string
-    title: string
-    id: string
-  }[]
-}) {
+type typeAllPostsData = {
+  category: string
+  title: string
+  id: string
+}
+
+export default function Home({ allPostsData }: { allPostsData: typeAllPostsData[] }) {
+  const categories = [
+    "philosophy", "architecture", "database", "test", "writing"
+  ]
+  const listPostData = (allPostsData: typeAllPostsData[], selectedCategory: string) => {
+    return (
+      <>
+        <h2 className={utilStyles.headingMd}>{selectedCategory}</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, category, title }) => (
+            <>
+              {category == selectedCategory &&
+                <li className={utilStyles.listItem} key={id}>
+                  <Link href={`/posts/${id}`}>
+                    <a>{title}</a>
+                  </Link>
+                </li>
+              }
+            </>
+          ))}
+        </ul>
+      </>
+    )
+  }
   return (
     <Layout home>
       <Head>
@@ -26,16 +46,13 @@ export default function Home({
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Docs</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <>
+          {categories.map((category: string) => {
+            return <>
+              {listPostData(allPostsData, category)}
+            </>
+          })}
+        </>
       </section>
     </Layout>
   )

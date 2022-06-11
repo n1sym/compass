@@ -1,7 +1,8 @@
 ---
-title: "ソフトウェアのテスト技法"
+title: "テストケースの作り方"
 created_at: "2022-06-10"
-updated_at: "2022-06-10"
+updated_at: "2022-06-11"
+category: "test"
 ---
 
 ### テストケースの作り方
