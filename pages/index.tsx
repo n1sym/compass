@@ -23,7 +23,7 @@ export default function Home({ allPostsData }: { allPostsData: typeAllPostsData[
           {allPostsData.map(({ id, category, title }) => (
             <div key={id}>
               {category == selectedCategory &&
-                <li className={utilStyles.listItem} key={id}>
+                <li className={utilStyles.listItem}>
                   <Link href={`/posts/${id}`}>
                     <a>{title}</a>
                   </Link>
