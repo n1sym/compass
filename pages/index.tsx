@@ -21,7 +21,7 @@ export default function Home({ allPostsData }: { allPostsData: typeAllPostsData[
         <h2 className={utilStyles.headingMd}>{selectedCategory}</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, category, title }) => (
-            <>
+            <div key={id}>
               {category == selectedCategory &&
                 <li className={utilStyles.listItem} key={id}>
                   <Link href={`/posts/${id}`}>
@@ -29,7 +29,7 @@ export default function Home({ allPostsData }: { allPostsData: typeAllPostsData[
                   </Link>
                 </li>
               }
-            </>
+            </div>
           ))}
         </ul>
       </>

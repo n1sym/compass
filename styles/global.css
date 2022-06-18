@@ -64,3 +64,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
+li {
+  padding-top: 5px;
+}
