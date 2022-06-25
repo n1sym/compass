@@ -13,7 +13,7 @@ type typeAllPostsData = {
 
 export default function Home({ allPostsData }: { allPostsData: typeAllPostsData[] }) {
   const categories = [
-    "philosophy", "architecture", "database", "test", "writing"
+    "principle", "philosophy", "architecture", "database", "test", "writing",
   ]
   const listPostData = (allPostsData: typeAllPostsData[], selectedCategory: string) => {
     return (
@@ -48,9 +48,9 @@ export default function Home({ allPostsData }: { allPostsData: typeAllPostsData[
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <>
           {categories.map((category: string) => {
-            return <>
+            return <div key={category}>
               {listPostData(allPostsData, category)}
-            </>
+            </div>
           })}
         </>
       </section>
